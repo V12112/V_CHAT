@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V_CHAT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+        <h2>💬 V_CHAT</h2>
+
+        <div class="users">
+            <h3>Usuarios</h3>
+
+            <div class="user online">
+                🟢 Tú
+            </div>
+
+        </div>
+
+    </aside>
+
+    <main class="chat">
+
+        <div class="header">
+            Canal General
+        </div>
+
+        <div id="messages" class="messages">
+
+            <div class="message other">
+                <span class="name">Sistema</span>
+                Bienvenido al chat.
+            </div>
+
+        </div>
+
+        <div class="input-area">
+
+            <input
+            id="messageInput"
+            type="text"
+            placeholder="Escribe un mensaje...">
+
+            <button id="sendBtn">
+                Enviar
+            </button>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
